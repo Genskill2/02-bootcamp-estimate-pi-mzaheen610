@@ -6,7 +6,7 @@ def wallis(num):
   for x in range(1,num):
       pi=pi*((4*x**2)/((4*x**2)-1))
   print("Value of pi is:",pi*2)
-  return pi
+  return pi*2
 
 
 def monte_carlo(darts):
