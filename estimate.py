@@ -1,11 +1,13 @@
 import math
 import unittest
+import random
 
 def wallis(num):
   pi = 1
-  for x in range(1,num+1):
+  for x in range(1,num):
       pi=pi*((4*x**2)/((4*x**2)-1))
-  return pi*2
+      pi=pi*2
+  return pi
 
 
 def monte_carlo(darts):
@@ -14,7 +16,7 @@ def monte_carlo(darts):
      point_x=random.random()
      point_y=random.random()
      d=math.sqrt(point_x**2+point_y**2)
-     if d<1:
+     if d<1.0:
         point_circle=point_circle+1
   pi=4*(point_circle/darts)
   return pi 
