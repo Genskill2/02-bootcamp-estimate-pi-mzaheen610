@@ -6,7 +6,7 @@ def wallis(num):
   pi = 1
   for x in range(1,num+1):
       pi=pi*((4*x**2)/((4*x**2)-1))
-      pi=pi*2
+  pi=pi*2
   return pi
 
 
